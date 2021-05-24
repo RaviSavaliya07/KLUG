@@ -1,0 +1,153 @@
+/* -----------------------------section project header------------------------------------------ */
+
+.section-project-header{
+  
+    position: relative;
+     height: 70vh;
+    width: 100%;
+}
+.section-project-header h3{
+    color: #dd4e82;
+}
+.section-project-header h5{
+    text-decoration: underline;
+    color: #7e0bf6;
+}
+
+
+/* ----------------------------------------section our project---------------------------------------------- */
+
+/* .card-img-top {
+    flex-shrink: 0;
+    width: 100%;
+  } */
+  .section-projects{
+    background-color: #eeeeee;
+    position: relative;
+  }
+  @media only screen and (max-width: 768px) {
+   
+    .section-project-header{
+        height: 50vh;
+    }
+}
+
+
+  .caption:hover {
+    text-decoration: none;
+  }
+  
+  .card-body {
+    padding: 10px;
+    justify-content: center;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #00000070;
+    color: #fff;
+  }
+  
+  .tc-image-effect {
+    position: relative;
+    overflow: hidden;
+    background: #222;
+    z-index: 9;
+  }
+  
+  .tc-image-effect img {
+    transition: all 0.4s ease-in-out;
+    opacity: 0.9;
+    width: 100%;
+    height: 500px;
+    object-fit: scale-down;
+  }
+  
+  .tc-image-effect:hover img {
+    transform: scale(1.2);
+    filter: blur(5px);
+  }
+  
+  .tc-image-effect .caption {
+    position: absolute;
+    bottom: calc(50% - -10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+  }
+  
+  .tc-image-effect:before,
+  .tc-image-effect:after {
+    position: absolute;
+    content: "";
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .tc-image-effect::before {
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+  }
+  
+  .tc-image-effect:after {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .tc-image-effect:hover:before,
+  .tc-image-effect:hover:after {
+    height: 40px;
+    width: 40px;
+    opacity: 1;
+  }
+  
+  .tc-image-effect .caption h3 {
+    color: white;
+    margin-bottom: 8px;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+  }
+  
+  .tc-image-effect:hover .caption h3 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .tc-image-effect .caption p {
+    transform: translateY(50px);
+    color: white;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .tc-image-effect:hover .caption h3,
+  .tc-image-effect:hover .caption p {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .project-illu{
+    position: absolute;
+    background-image: url("../resources/illustrations/slice1.svg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    top:0%;
+    left: 0%;
+    opacity: 0.40;
+    z-index: 1;
+   
+  }

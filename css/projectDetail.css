@@ -1,0 +1,126 @@
+/* -----------------------------section project-detail header------------------------------------------ */
+
+.section-project-detail-header{
+    /* background-color: #f2f6f6; */
+    position: relative;
+     height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 2%;
+}
+.section-project-detail-header h3{
+    color: #dd4e82;
+}
+.section-project-detail-header h5{
+    text-decoration: underline;
+    color: #7e0bf6;
+}
+
+
+
+.project-detail{
+    background-color: #eeeeee;
+    position: relative;
+    overflow: hidden;
+}
+.project-detail h4{
+    color: #dd4e82;
+}
+
+.project-detail  ul{
+    list-style-type: none;
+     }
+   
+.project-detail  li {
+       position: relative;
+       padding-left: 3rem;
+       margin-bottom: .5rem;
+       font-size: 1.8rem;
+      
+     }
+.project-detail  li:hover{
+       color: #dd4e82;
+       text-decoration: underline;
+       font-weight: bold;
+    }
+   
+     
+/* .project-detail  li:before {
+       position: absolute;
+       top: 0;
+       left: 0;
+       font-family: FontAwesome;
+       content: "\f105";
+       color: #7e0bf6;
+} */
+.header-illu1{
+    position: absolute;
+    background-image: url("../resources/illustrations/graphic6.svg");
+    background-repeat: no-repeat;
+    height: 30%;
+    width: 30%;
+    top:60%;
+    left: 15%;
+    opacity: 0.30;
+    z-index: 1;
+   
+  }
+  .header-illu2{
+    position: absolute;
+    background-image: url("../resources/illustrations/graphic11.svg");
+    background-repeat: no-repeat;
+    height: 20%;
+    width: 20%;
+    top:25%;
+    left: 39%;
+    opacity: 0.30;
+    z-index: 1;
+   
+  }
+  .detail-illu2{
+    position: absolute;
+    background-image: url("../resources/illustrations/memphis3.svg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    top:0%;
+    left: 3%;
+    opacity: 0.40;
+    z-index: 1;
+    background-position: right;
+  }
+
+  .detail-illu1{
+    position: absolute;
+    background-image: url("../resources/illustrations/memphis1.svg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    top:0%;
+    left: 0%;
+    opacity: 0.40;
+    z-index: 1;
+  }
+  
+
+
+  @media only screen and (max-width: 768px) {
+       .detail-illu1{
+           display: none;
+       }
+       .detail-illu2{
+           display: none;
+       }
+       .section-project-detail-header{
+           height: 50vh;
+           margin-top: 3%;
+       }
+  }
+  @media only screen and (max-width: 480px) {
+      .header-illu1{
+          display: none;
+      }
+      .header-illu2{
+          display: none;
+      }
+  }
